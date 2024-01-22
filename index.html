@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <!-- Header navigation -->
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 border-bottom fixed-top  navbar">
+          <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <span class="fs-4 ps-3 navtext">Welcome!</span>
+          </a>
+    
+          <ul class="nav nav-pills navtext">
+            <li class="nav-item"><a href="#aboutme" class=" navtext nav-link">About Me</a></li>
+            <li class="nav-item"><a href="#workexp" class=" navtext nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#icon-grid" class=" navtext nav-link">My Skills</a></li>
+            <li class="nav-item"><a href="#myCarousel" class=" navtext nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#contactme" class=" navtext nav-link">Contact </a></li>
+          </ul>
+        </header>
+      </div>
+
+      <!--About Me-->
+      <div class="container col-xxl-8 px-4 py-5 mb-5" id="aboutme">
+        <div class="row flex-lg-row-reverse align-items-center g-5 my-5 pt-5 b-4" >
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="images/mypic.png" class=" profileimg d-block mx-lg-auto img-fluid" alt="Chandana profile pic" width="300" height="400" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="displaytext display-5 fw-bold lh-1 mb-3">Hey! I am Chandana</h1>
+            <p class="lead">I am a frontend developer, with my background in Computer Science Engg. I like to design the websites and make them easy to navigate. <br>I love to read and sketch in my free time. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5"/>
+              </svg></p>
+          </div>
+        </div>
+      </div>
+
+      <!--Experience-->
+      <div id="aboutmescroll"></div>
+      <div class="accordion mt-3 mb-3" id="accordionExample">
+        <h2 class="experienceheading mb-4 ms-3" id="workexp">Work Experience</h2>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <strong>Project Intern - Verzeo (Python)</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body lead">
+              <p>Learnt and implemented mini project using Python with Machine Learning. Successfully completed “Employee Sales Prediction” project using Python</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <strong>Project Intern - TechFortune (HTML,CSS,JS,Bootstrap)</strong>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body lead">
+              <p>Worked as an intern to contribute for frontend projects using HTML,CSS,Bootstrap and JS. Successfully handled and completed frontend travel agency website</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <strong>SRE</strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body lead">
+              <p>Worked as Application Security Engineer to design, develop and implement business transformation solutions in Banking sector across multiple geographies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Skills-->
+      <div class= " ms-3 mt-5 py-5 mb-3" id="icon-grid">
+        <h2 class="experienceheading">Skills</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+            <div>
+              <h3 class=" skills  mb-2 fs-4 ">HTML</h3>
+              <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+            <div>
+              <h3 class="skills  mb-2 fs-4 ">CSS</h3>
+              <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+            <div>
+              <h3 class="skills  mb-2 fs-4 ">Javascript</h3>
+              <p>&#11088;&#11088;&#11088;&#11088;</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+            <div>
+              <h3 class="skills  mb-2 fs-4 ">Python</h3>
+              <p>&#11088;&#11088;&#11088;&#11088;</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+            <div>
+              <h3 class="skills  mb-2 fs-4 ">Bootstrap</h3>
+              <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+            <div>
+              <h3 class="skills  mb-2 fs-4 ">Web Design</h3>
+              <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+            <div>
+              <h3 class="skills  mb-2 fs-4 ">Responsive Layout</h3>
+              <p>&#11088;&#11088;&#11088;&#11088;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Projects-->
+      <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
+        <h2 class="ms-3 experienceheading mb-5">Projects</h2>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/mondrianpainting.png" height="500px" width="100%" alt="Mondrian Painting Project"/>
+            <div class="container">
+              <div class="carousel-caption">
+                <p><a class="btn btn-outline-secondary projbutton" href="https://chandana-128.github.io/Mondrian-Painting/" target="_blank">Mondrian Painting</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/design agency.png" height="500px" width="100%" alt="Design Agency Project"/>
+            <div class="container">
+              <div class="carousel-caption">
+                <p><a class="btn btn-outline-secondary projbutton" href="https://chandana-128.github.io/Web-Design-Agency/" target="_blank">Design Agency</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/catlov tinder.png" height="500px" width="100%" alt="Cat Tinder Project"/>
+            <div class="container">
+              <div class="carousel-caption">
+                <p><a class="btn btn-outline-secondary projbutton" href="https://chandana-128.github.io/CatLov-Tinder-Proj/" target="_blank">CatLov</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+          <span class="visually-hidden">Previous</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#365486" class="bi bi-caret-left-square-fill" viewBox="0 0 16 16">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12"/>
+          </svg>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#365486" class="bi bi-caret-right-square-fill" viewBox="0 0 16 16">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4z"/>
+          </svg>
+          <span class="visually-hidden">Next</span>
+
+        </button>
+      </div>
+
+      <!---Contact Me-->
+      <div id= "contactme" class="my-5">
+        <div class="contactme p-5 border rounded-5" >
+          <h2 class="mb-5 mt-3 experienceheading">Say Hello :)</h2>
+          <p class="col-lg-6 mb-4 lead">
+            If you liked my work, feel free to contact me for any project or portfolio works.
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-heart" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+              </svg>
+            <br><br>
+            Email : vnc2820@gmail.com<br>
+            Mobile : +918904481962
+          </p>
+          <a href="Chandana.docx" download><button class="btn btn-outline-secondary px-5 mb-5" type="button">
+            Download the CV
+          </button></a>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-3 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 footer text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 footer">© Chandana's Portfolio</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="footer" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg></a></li>
+            <li class="ms-3"><a class="footer" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+              </svg></a></li>
+            <li class="ms-3"><a class="footer" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg></a></li>
+          </ul>
+        </footer>
+      </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
